@@ -78,7 +78,7 @@ const CurrencyConverter = () => {
   return (
     <Card className="bg-card/50 backdrop-blur-glass border border-border hover:transition-all duration-150">
       <CardHeader>
-        <CardTitle className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 text-center">Currency Converter</CardTitle>
+        <CardTitle className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 text-center">Crypto-to-Euro Compliance <span className="text-primary">Converter</span></CardTitle>
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-end">

@@ -11,11 +11,11 @@ const Footer = () => {
           <div className="lg:flex-shrink-0 lg:w-72 lg:pr-8 lg:mr-10">
             <div className="flex items-center space-x-2">
               <span className="text-lg font-bold text-primary">
-                ChainLaunch
+                ECSC
               </span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed mt-4 max-w-xs">
-              Discover and back top crypto projects early. Invest smarter with ChainLaunch.
+              Discover and back top crypto projects early. Invest smarter with ECSC.
             </p>
           </div>
 
@@ -34,7 +34,7 @@ const Footer = () => {
           <div className="lg:flex-1 lg:min-w-[150px] lg:mr-10">
             <h3 className="text-sm font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>support@chainlaunch.com</li>
+              <li>support@eucsc.org </li>
               <li>+1 (555) 123-4567</li>
               <li>24/7 Support</li>
             </ul>
@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; 2025 ChainLaunch. All rights reserved. | Cryptocurrency investments carry significant risk.</p>
+          <p>&copy; 2025 ECSC. All rights reserved. | Cryptocurrency investments carry significant risk.</p>
         </div>
       </div>
     </footer>

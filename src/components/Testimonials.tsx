@@ -38,11 +38,11 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
-            What Our <span className="text-primary">Investors</span> Say
+            What Our <span className="text-primary">Partners</span> Say
           </h2>
-          <p className="text-base md:text-lg text-muted-foreground max-w-4xl mx-auto">
+          {/* <p className="text-base md:text-lg text-muted-foreground max-w-4xl mx-auto">
             Join thousands who've discovered their next big opportunity through ChainLaunch.
-          </p>
+          </p> */}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

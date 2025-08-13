@@ -55,10 +55,10 @@ const Newsletter = () => {
           <Mail className="h-6 w-6 md:h-6 md:w-6 lg:h-8 lg:w-8 text-primary" />
         </div>
         <CardTitle className="text-2xl sm:text-3xl md:text-3xl font-bold mb-4">
-          Subscribe to Our Newsletter
+          Stay Informed. <span className="text-primary">Stay Secure.</span>
         </CardTitle>
-        <p className="text-base md:text-base lg:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-          Get early access to token launches and updates straight to your inbox.
+        <p className="text-base md:text-base lg:text-l text-muted-foreground mb-8 max-w-3xl mx-auto">
+          Subscribe for cyber alerts, regulatory updates, and safety tips straight to your inbox.
         </p>
       </CardHeader>
       <CardContent>

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Search, Rocket, TrendingUp, Users, Lock, CheckCircle } from 'lucide-react';
+import { Search, Rocket, TrendingUp, Users, Lock, CheckCircle, Shield } from 'lucide-react';
 import Layout from '@/components/Layout';
 import CryptoTable from '@/components/CryptoTable';
 import CurrencyConverter from '@/components/CurrencyConverter';
@@ -16,50 +16,50 @@ const Index = () => {
   const features = [
     {
       icon: Search,
-      title: 'We Find',
-      description: 'We research and vet early-stage crypto projects.',
+      title: 'We Monitor',
+      description: 'Continuous surveillance of cyber threats and blockchain activity.',
     },
     {
       icon: Rocket,
-      title: 'We Launch',
-      description: 'You get early access before exchange listings.',
+      title: 'We Regulate',
+      description: 'Enforcing EU cryptocurrency laws and cybersecurity standards.',
     },
     {
-      icon: TrendingUp,
-      title: 'You Grow',
-      description: "Be among the first to invest in tomorrow's top tokens.",
+      icon: Shield,
+      title: 'We Protect',
+      description: "Assisting victims of cybercrime and preventing future attacks.",
     },
   ];
 
   const benefits = [
     {
       icon: Lock,
-      title: 'Secure Transactions',
-      description: 'End-to-end encrypted transaction flow ensures your investments stay private and protected.',
+      title: 'Secure Reporting',
+      description: 'Encrypted channels for whistleblowers and crime victims.',
     },
     {
       icon: Users,
-      title: 'Community First',
-      description: 'All projects are peer-reviewed and scored by our early access community before public launch.',
+      title: 'Community Awareness',
+      description: 'Education programs and public safety alerts.',
     },
   ];
 
   const investmentFeatures = [
     {
-      title: 'Real-Time Insights',
-      description: 'Track the latest token launches and price changes as they happen.',
+      title: 'Real-Time Alerts',
+      description: 'Receive instant cyber and crypto fraud warnings.',
     },
     {
-      title: 'Cross-Device Access',
-      description: 'Use ChainLaunch on desktop, tablet, or mobile without missing a beat.',
+      title: 'Cross-Platform Monitoring',
+      description: 'Track threats across devices, apps, and networks.',
     },
     {
-      title: 'Safe by Design',
-      description: 'Smart contracts with no wallet keys required — your funds, your control.',
+      title: 'Secure by Design',
+      description: 'Advanced encryption for all data and communications.',
     },
     {
-      title: 'Be Early. Stay Ahead',
-      description: "Back tomorrow's leaders before the crowd catches on.",
+      title: 'Stay Ahead',
+      description: 'Get intelligence reports before threats escalate.',
     },
   ];
 
@@ -72,18 +72,18 @@ const Index = () => {
           <div className="animate-fade-in-up">
             <h1 className="text-3xl md:text-4xl lg:text-4xl lg:text-5xl font-bold mb-6">
               <DecryptedText 
-                text="Blockchain Technology"
+                text="Cybersecurity & Cryptocurrency Regulation"
                 speed={25}
                 className="mr-2 text-black"
               />{' '}
               <DecryptedText 
-                text="Made Simple"
+                text="Made Clear"
                 speed={25}
                 className="text-primary"
               />
             </h1>
             <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              We find and launch the top emerging crypto tokens — early, verified, ahead of the curve.
+              We protect Europe’s digital economy, combat cybercrime, and ensure safe and transparent cryptocurrency markets.
             </p>
           </div>
         </div>
@@ -107,7 +107,7 @@ const Index = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">How It Works</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">How We Safeguard the <span className="text-primary">Digital Economy</span></h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -119,14 +119,14 @@ const Index = () => {
               >
                 <CardContent className="p-6 pl-8 text-left">
                   <div className="mb-3 inline-flex p-3 rounded-lg relative">
-                    {feature.title === 'We Launch' && (
-                      <Rocket className="h-6 w-6 md:h-6 md:w-6 lg:h-8 lg:w-8 text-primary" />
+                    {feature.title === 'We Monitor' && (
+                      <Search className="h-6 w-6 md:h-6 md:w-6 lg:h-8 lg:w-8 text-primary" />
                     )}
-                    {feature.title === 'You Grow' && (
+                    {feature.title === 'We Regulate' && (
                       <TrendingUp className="h-6 w-6 md:h-6 md:w-6 lg:h-8 lg:w-8 text-primary" />
                     )}
-                    {feature.title === 'We Find' && (
-                      <Search className="h-6 w-6 md:h-6 md:w-6 lg:h-8 lg:w-8 text-primary" />
+                    {feature.title === 'We Protect' && (
+                      <Shield className="h-6 w-6 md:h-6 md:w-6 lg:h-8 lg:w-8 text-primary" />
                     )}
                   </div>
                   <h3 className="text-lg md:text-xl font-semibold">{feature.title}</h3>
@@ -145,9 +145,9 @@ const Index = () => {
               >
                 <CardContent className="p-6">
                   <div className="mb-3 inline-flex p-3 rounded-lg relative">
-                    {benefit.title === 'Secure Transactions' ? (
+                    {benefit.title === 'Secure Reporting' ? (
                       <Lock className="h-6 w-6 md:h-6 md:w-6 lg:h-8 lg:w-8 text-primary" />
-                    ) : benefit.title === 'Community First' ? (
+                    ) : benefit.title === 'Community Awareness' ? (
                       <Users className="h-6 w-6 md:h-6 md:w-6 lg:h-8 lg:w-8 text-primary" />
                     ) : (
                       <benefit.icon className="h-6 w-6 md:h-6 md:w-6 lg:h-8 lg:w-8 text-primary" />
@@ -167,41 +167,41 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
-              Total Trust. <span className="text-primary">Transparent Performance.</span>
+              Our Impact.<span className="text-primary"> Transparent Results</span>
             </h2>
-            <p className="text-base md:text-lg text-muted-foreground max-w-4xl mx-auto">
+            {/* <p className="text-base md:text-lg text-muted-foreground max-w-4xl mx-auto">
               Our platform never asks for your private wallet keys. Your assets are held securely on public blockchains inside keyless smart contracts built for safety and scalability.
-            </p>
+            </p> */}
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="bg-card/50 backdrop-blur-glass border border-border hover:hover:border-primary/50 transition-all duration-150 group animate-fade-in-up text-center">
               <CardContent className="p-6 sm:p-8">
                 <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-2">
-                  <AnimatedCounter end={85000} suffix="+" />
+                  <AnimatedCounter end={61000} suffix="+" />
                 </div>
                 <h3 className="text-lg md:text-xl font-semibold mb-2">Total Investors</h3>
-                <p className="text-sm md:text-base text-muted-foreground">Verified users actively investing in early-stage tokens.</p>
+                <p className="text-sm md:text-base text-muted-foreground">Cybercrime reports handled in the last year.</p>
               </CardContent>
             </Card>
 
             <Card className="bg-card/50 backdrop-blur-glass border border-border hover:border-primary/50 transition-all duration-150 group animate-fade-in-up text-center">
               <CardContent className="p-6 sm:p-8">
                 <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-2">
-                  <AnimatedCounter end={12.4} prefix="€" suffix="M+" decimals={1} />
+                  <AnimatedCounter end={24} prefix="€" suffix="M+" decimals={1} />
                 </div>
                 <h3 className="text-lg md:text-xl font-semibold mb-2">Investor Earnings</h3>
-                <p className="text-sm md:text-base text-muted-foreground">Total profits earned through early access opportunities.</p>
+                <p className="text-sm md:text-base text-muted-foreground">Illicit crypto recovered and returned to victims.</p>
               </CardContent>
             </Card>
 
             <Card className="bg-card/50 backdrop-blur-glass border border-border hover:border-primary/50 transition-all duration-150 group animate-fade-in-up text-center">
               <CardContent className="p-6 sm:p-8">
                 <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-2">
-                  <AnimatedCounter end={28} prefix="€" suffix="M+" />
+                  <AnimatedCounter end={20} prefix="€" suffix="M+" />
                 </div>
                 <h3 className="text-lg md:text-xl font-semibold mb-2">2025 Earnings Projection</h3>
-                <p className="text-sm md:text-base text-muted-foreground">Based on token performance, community growth, and upcoming launches.</p>
+                <p className="text-sm md:text-base text-muted-foreground">Saved for businesses through proactive threat prevention.</p>
               </CardContent>
             </Card>
           </div>
@@ -213,11 +213,11 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
-              Invest On <span className="text-primary">Your Terms</span>
+              Work With Us to Secure <span className="text-primary">Europe’s Digital Future</span>
             </h2>
-            <p className="text-base md:text-lg text-muted-foreground max-w-4xl mx-auto">
+            {/* <p className="text-base md:text-lg text-muted-foreground max-w-4xl mx-auto">
               Whether you're at home or on the go, ChainLaunch get instant access to early crypto opportunities anytime.
-            </p>
+            </p> */}
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">

@@ -48,7 +48,7 @@ const Navigation = () => {
             <div className="flex-shrink-0">
               <Link to="/" className="flex items-center space-x-2 group">
                 <span className="text-xl font-bold text-primary">
-                  ChainLaunch
+                  ECSC
                 </span>
               </Link>
             </div>
